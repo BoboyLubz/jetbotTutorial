@@ -1,0 +1,1710 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  info [
+    "JetBot basic motion performed using a C controller."
+  ]
+  title "JetBot Basic Motion"
+  contactProperties [
+    ContactProperties {
+      material1 "jetbot rear wheel"
+      coulombFriction [
+        0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.6145839280272608 0.006524302529428819 0.7888244601222042 3.1248450333138518
+  position 4.111094232412576 -1.9175980535506638 10.962252009186088
+}
+TexturedBackground {
+  texture "factory"
+}
+DEF JETBOT Robot {
+  translation 1.51667 -0.0108441 0.00677155
+  rotation 0 0 1 -3.0550153071795862
+  children [
+    Robot {
+      translation -0.013 0.002 0.0719
+      rotation 0 1 0 0
+      children [
+        DEF BOARD_DOWN Transform {
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Transform {
+              rotation 0 1 0 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/pcb/pcb_base_color.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/pcb/pcb_roughness.jpg"
+                      ]
+                    }
+                    metalnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/pcb/pcb_metalness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/pcb/pcb_normal.jpg"
+                      ]
+                    }
+                    normalMapFactor 3
+                    occlusionMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/pcb/pcb_occlusion.jpg"
+                      ]
+                    }
+                    occlusionMapStrength 3
+                  }
+                  geometry Box {
+                    size 0.079 0.0012 0.1
+                  }
+                }
+              ]
+            }
+            DEF PINS_A Transform {
+              translation -0.0069 0.002 -0.04
+              children [
+                Shape {
+                  appearance DEF BLACK_APPEARANCE PBRAppearance {
+                    baseColor 0.180392 0.203922 0.211765
+                    roughness 0.5
+                    metalness 0.2
+                  }
+                  geometry Box {
+                    size 0.051 0.0026 0.005
+                  }
+                }
+                Transform {
+                  translation 0.02407 0.0022 0.00127
+                  children [
+                    DEF PIN Shape {
+                      appearance PBRAppearance {
+                        baseColorMap ImageTexture {
+                          url [
+                            "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                          ]
+                        }
+                        roughnessMap ImageTexture {
+                          url [
+                            "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                          ]
+                        }
+                        normalMap ImageTexture {
+                          url [
+                            "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                          ]
+                        }
+                      }
+                      geometry Box {
+                        size 0.00065 0.012 0.00065
+                      }
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.02407 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0215 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0215 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0189 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0189 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0164 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0164 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0139 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0139 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0113 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0113 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0088 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0088 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0062 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0062 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0037 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0037 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0012 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0012 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0014 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0014 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0039 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0039 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0064 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0064 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.009 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.009 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0115 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0115 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0141 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0141 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0166 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0166 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0191 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0191 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0216 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0216 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0242 0.0022 0.00127
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0242 0.0022 -0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            DEF PINS_B Transform {
+              translation -0.0358 0.002 -0.046
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.0054 0.0026 0.005
+                  }
+                }
+                Transform {
+                  translation 0.0014 0.0022 0.0011
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0011 0.0022 0.0011
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0014 0.0022 -0.0015
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0011 0.0022 -0.0015
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            DEF PINS_C Transform {
+              translation 0.0143 0.002 -0.0276
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.006 0.0026 0.0105
+                  }
+                }
+                Transform {
+                  translation 0.0004 0.0049 0.0036
+                  children [
+                    DEF PIN Shape {
+                      appearance PBRAppearance {
+                      }
+                      geometry Box {
+                        size 0.00065 0.0077 0.00065
+                      }
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.0004 0.0049 0.0011
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0004 0.0049 -0.0015
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0004 0.0049 -0.004
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            DEF PINS_D Transform {
+              translation -0.0311 0.002 0.0401
+              rotation 0 1 0 1.5708
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.0025 0.0026 0.0153
+                  }
+                }
+                Transform {
+                  translation 0 0.0022 0.0064
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 0.0038
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 -0.0012
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 -0.0037
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 -0.0063
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            DEF PINS_E Transform {
+              translation -0.0261 0.002 0.047
+              rotation 0 1 0 1.5708
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.005 0.0026 0.01
+                  }
+                }
+                Transform {
+                  translation 0.0013 0.0022 0.0038
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0013 0.0022 0.0038
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0013 0.0022 0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0013 0.0022 0.0013
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0013 0.0022 -0.0012
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0013 0.0022 -0.0012
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0.0013 0.0022 -0.0037
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation -0.0013 0.0022 -0.0037
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            DEF PINS_F Transform {
+              translation 0.0078 0.002 0.047
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.0023 0.0026 0.005
+                  }
+                }
+                Transform {
+                  translation 0 0.0022 0.0012
+                  children [
+                    USE PIN
+                  ]
+                }
+                Transform {
+                  translation 0 0.0022 -0.0012
+                  children [
+                    USE PIN
+                  ]
+                }
+              ]
+            }
+            Transform {
+              translation -0.0069 0.0046 0.0462
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.0225 0.0078 0.004
+                  }
+                }
+              ]
+            }
+            DEF POWER_PORT Transform {
+              translation 0.0335 0.0029 0.044
+              children [
+                Shape {
+                  appearance USE BLACK_APPEARANCE
+                  geometry Box {
+                    size 0.0145 0.0041 0.009
+                  }
+                }
+                Transform {
+                  translation 0.0003 0.004 0
+                  rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+                  children [
+                    Shape {
+                      appearance USE BLACK_APPEARANCE
+                      geometry Cylinder {
+                        bottom FALSE
+                        height 0.014
+                        radius 0.0045
+                      }
+                    }
+                    Shape {
+                      appearance PBRAppearance {
+                        baseColorMap ImageTexture {
+                          url [
+                            "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/textures/jetson_power_plug.jpg"
+                          ]
+                        }
+                        roughness 0.5
+                        metalness 0.2
+                      }
+                      geometry Cylinder {
+                        height 0.014
+                        radius 0.0045
+                        side FALSE
+                        top FALSE
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            DEF VIDEO_PORT Transform {
+              translation 0.0319 0.0105 0.0262
+              rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0095 -0.008649969696057897 -0.008249999999944344
+                        -0.0095 0.008650030303942102 -0.008249999999944344
+                        -0.0095 -0.008650030303942102 0.008249999999944344
+                        -0.0095 0.008649969696057897 0.008249999999944344
+                        0.0095 -0.008649969696057897 -0.008249999999944344
+                        0.0095 0.008650030303942102 -0.008249999999944344
+                        0.0095 -0.008650030303942102 0.008249999999944344
+                        0.0095 0.008649969696057897 0.008249999999944344
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      1, 0, 2, 3, -1, 4, 5, 7, 6, -1
+                      5, 1, 3, 7, -1, 0, 4, 6, 2, -1
+                      7, 3, 2, 6, -1
+                    ]
+                    texCoordIndex [
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      1, 3, 2, 0, -1
+                    ]
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/textures/jetson_video_port.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                    textureTransform TextureTransform {
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0095 -0.008649969696057897 -0.008249999999944344
+                        -0.0095 0.008650030303942102 -0.008249999999944344
+                        -0.0095 -0.008650030303942102 0.008249999999944344
+                        -0.0095 0.008649969696057897 0.008249999999944344
+                        0.0095 -0.008649969696057897 -0.008249999999944344
+                        0.0095 0.008650030303942102 -0.008249999999944344
+                        0.0095 -0.008650030303942102 0.008249999999944344
+                        0.0095 0.008649969696057897 0.008249999999944344
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      4, 0, 1, 5, -1
+                    ]
+                    texCoordIndex [
+                      2, 0, 1, 3, -1
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF USB1_PORT Transform {
+              translation 0.032 0.009 -0.0095
+              rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+              children [
+                DEF USB_SHAPE Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.008 -0.007599968777756622 -0.008499999999942658
+                        -0.008 0.007600031222243378 -0.008499999999942658
+                        -0.008 -0.007600031222243378 0.008499999999942658
+                        -0.008 0.007599968777756622 0.008499999999942658
+                        0.008 -0.007599968777756622 -0.008499999999942658
+                        0.008 0.007600031222243378 -0.008499999999942658
+                        0.008 -0.007600031222243378 0.008499999999942658
+                        0.008 0.007599968777756622 0.008499999999942658
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      1, 0, 2, 3, -1, 4, 5, 7, 6, -1
+                      5, 1, 3, 7, -1, 0, 4, 6, 2, -1
+                      7, 3, 2, 6, -1
+                    ]
+                    texCoordIndex [
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      1, 3, 2, 0, -1
+                    ]
+                  }
+                }
+                DEF USB_FRONT_SHAPE Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/textures/jetson_usb_port.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    metalness 0.7
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                    textureTransform TextureTransform {
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.008 -0.007599968777756622 -0.008499999999942658
+                        -0.008 0.007600031222243378 -0.008499999999942658
+                        -0.008 -0.007600031222243378 0.008499999999942658
+                        -0.008 0.007599968777756622 0.008499999999942658
+                        0.008 -0.007599968777756622 -0.008499999999942658
+                        0.008 0.007600031222243378 -0.008499999999942658
+                        0.008 -0.007600031222243378 0.008499999999942658
+                        0.008 0.007599968777756622 0.008499999999942658
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      4, 0, 1, 5, -1
+                    ]
+                    texCoordIndex [
+                      2, 0, 1, 3, -1
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF USB2_PORT Transform {
+              translation 0.032 0.009 0.0073
+              rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+              children [
+                USE USB_SHAPE
+                USE USB_FRONT_SHAPE
+              ]
+            }
+            DEF ETHERNET_PORT Transform {
+              translation 0.03 0.0065 -0.027
+              rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0055 -0.007749961431346415 -0.010499999999929165
+                        -0.0055 0.007750038568653585 -0.010499999999929165
+                        -0.0055 -0.007750038568653585 0.010499999999929165
+                        -0.0055 0.007749961431346415 0.010499999999929165
+                        0.0055 -0.007749961431346415 -0.010499999999929165
+                        0.0055 0.007750038568653585 -0.010499999999929165
+                        0.0055 -0.007750038568653585 0.010499999999929165
+                        0.0055 0.007749961431346415 0.010499999999929165
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      1, 0, 2, 3, -1, 4, 5, 7, 6, -1
+                      5, 1, 3, 7, -1, 0, 4, 6, 2, -1
+                      7, 3, 2, 6, -1
+                    ]
+                    texCoordIndex [
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      1, 3, 2, 0, -1
+                    ]
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/textures/jetson_ethernet_port.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    metalness 0.7
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0055 -0.007749961431346415 -0.010499999999929165
+                        -0.0055 0.007750038568653585 -0.010499999999929165
+                        -0.0055 -0.007750038568653585 0.010499999999929165
+                        -0.0055 0.007749961431346415 0.010499999999929165
+                        0.0055 -0.007749961431346415 -0.010499999999929165
+                        0.0055 0.007750038568653585 -0.010499999999929165
+                        0.0055 -0.007750038568653585 0.010499999999929165
+                        0.0055 0.007749961431346415 0.010499999999929165
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      4, 0, 1, 5, -1
+                    ]
+                    texCoordIndex [
+                      2, 0, 1, 3, -1
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF MICRO_PORT Transform {
+              translation 0.036 0.002 -0.042
+              rotation -0.5773502691896258 -0.5773502691896258 0.5773502691896258 2.09439
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0017 -0.003999986592801373 -0.003649999999975376
+                        -0.0017 0.004000013407198627 -0.003649999999975376
+                        -0.0017 -0.004000013407198627 0.003649999999975376
+                        -0.0017 0.003999986592801373 0.003649999999975376
+                        0.0017 -0.003999986592801373 -0.003649999999975376
+                        0.0017 0.004000013407198627 -0.003649999999975376
+                        0.0017 -0.004000013407198627 0.003649999999975376
+                        0.0017 0.003999986592801373 0.003649999999975376
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      1, 0, 2, 3, -1, 4, 5, 7, 6, -1
+                      5, 1, 3, 7, -1, 0, 4, 6, 2, -1
+                      7, 3, 2, 6, -1
+                    ]
+                    texCoordIndex [
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      0, 1, 3, 2, -1, 0, 1, 3, 2, -1
+                      1, 3, 2, 0, -1
+                    ]
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/textures/jetson_usb_mini_port.jpg"
+                      ]
+                    }
+                    roughnessMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                      ]
+                    }
+                    metalness 0.7
+                    normalMap ImageTexture {
+                      url [
+                        "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                      ]
+                    }
+                    textureTransform TextureTransform {
+                    }
+                  }
+                  geometry IndexedFaceSet {
+                    coord Coordinate {
+                      point [
+                        -0.0017 -0.003999986592801373 -0.003649999999975376
+                        -0.0017 0.004000013407198627 -0.003649999999975376
+                        -0.0017 -0.004000013407198627 0.003649999999975376
+                        -0.0017 0.003999986592801373 0.003649999999975376
+                        0.0017 -0.003999986592801373 -0.003649999999975376
+                        0.0017 0.004000013407198627 -0.003649999999975376
+                        0.0017 -0.004000013407198627 0.003649999999975376
+                        0.0017 0.003999986592801373 0.003649999999975376
+                      ]
+                    }
+                    texCoord TextureCoordinate {
+                      point [
+                        0 0
+                        1 0
+                        0 1
+                        1 1
+                      ]
+                    }
+                    coordIndex [
+                      4, 0, 1, 5, -1
+                    ]
+                    texCoordIndex [
+                      2, 0, 1, 3, -1
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        DEF BOARD_UP Transform {
+          translation 0.002 -0.0185 0.0093
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.09439
+          children [
+            DEF SCREW Transform {
+              translation 0.02 -0.004 0.032
+              rotation 1 0 0 -1.57079
+              children [
+                DEF SCREW_SHAPE Shape {
+                  appearance DEF LIGHT_YELLOW_APPEARANCE PBRAppearance {
+                    baseColor 1 0.968627 0.690196
+                    roughness 0.5
+                    metalness 0.1
+                  }
+                  geometry Cylinder {
+                    height 0.01
+                    radius 0.0026
+                    subdivision 6
+                  }
+                }
+              ]
+            }
+            DEF SCREW Transform {
+              translation -0.018 -0.004 0.032
+              rotation 1 0 0 -1.57079
+              children [
+                USE SCREW_SHAPE
+              ]
+            }
+            DEF SCREW Transform {
+              translation -0.018 -0.004 -0.032
+              rotation 1 0 0 -1.57079
+              children [
+                USE SCREW_SHAPE
+              ]
+            }
+            DEF SCREW Transform {
+              translation 0.02 -0.004 -0.032
+              rotation 1 0 0 -1.57079
+              children [
+                USE SCREW_SHAPE
+              ]
+            }
+            Shape {
+              appearance USE BLACK_APPEARANCE
+              geometry Box {
+                size 0.045 0.0012 0.07
+              }
+            }
+          ]
+        }
+        DEF HEAT_SINK Transform {
+          translation 0.013 -0.002 -0.029
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.09439
+          scale 0.001 0.001 0.001
+          children [
+            Shape {
+              appearance DEF BLACK_APPEARANCE PBRAppearance {
+                baseColor 0.180392 0.203922 0.211765
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/devices/nvidia/protos/meshes/jetson_heat_sink.stl"
+                ]
+              }
+            }
+          ]
+        }
+        Group {
+        }
+      ]
+      name "NVIDIA Jetson Nano"
+      controller ""
+    }
+    DEF BODY Transform {
+      translation 0 0 0.043
+      children [
+        Camera {
+          translation 0.08 0 0.03
+          rotation 0 1 0 0.261799
+          fieldOfView 2.7854
+          width 224
+          height 224
+          spherical TRUE
+          recognition Recognition {
+          }
+        }
+        DEF CHASSIS Transform {
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.571 0.817 0.479
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/robots/nvidia/jetbot/protos/meshes/chassis.stl"
+                ]
+              }
+            }
+          ]
+        }
+        DEF LEFT_MOTOR Transform {
+          translation 0.01 0.034 -0.01
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Shape {
+              appearance DEF YELLOW_APPEARANCE PBRAppearance {
+                baseColor 0.929412 0.831373 0
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Box {
+                size 0.013 0.014 0.065
+              }
+            }
+            Transform {
+              translation 0.002 -0.0026 0.0209
+              rotation 0 1 0 -1.5708
+              children [
+                Shape {
+                  appearance DEF LIGHT_YELLOW_APPEARANCE PBRAppearance {
+                    baseColor 1 0.968627 0.690196
+                    roughness 0.5
+                    metalness 0.1
+                  }
+                  geometry Cylinder {
+                    height 0.038
+                    radius 0.0019
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        DEF RIGHT_MOTOR Transform {
+          translation 0.01 -0.034 -0.01
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Shape {
+              appearance USE YELLOW_APPEARANCE
+              geometry Box {
+                size 0.013 0.014 0.065
+              }
+            }
+            Transform {
+              translation -0.002 -0.0026 0.0209
+              rotation 0 1 0 -1.5708
+              children [
+                Shape {
+                  appearance USE LIGHT_YELLOW_APPEARANCE
+                  geometry Cylinder {
+                    height 0.038
+                    radius 0.0019
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        DEF POWER_BANK Transform {
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Shape {
+              appearance DEF BLACK_APPEARANCE PBRAppearance {
+                baseColor 0.180392 0.203922 0.211765
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/robots/nvidia/jetbot/protos/meshes/power_bank.stl"
+                ]
+              }
+            }
+          ]
+        }
+        DEF DISPLAY Transform {
+          translation -0.0606 0.01197 0.0395
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.470588 0.517647 0.792157
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/robots/nvidia/jetbot/protos/meshes/display.stl"
+                ]
+              }
+            }
+            Display {
+              translation -0.0017 0.0009 -0.002
+              rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0
+                    roughness 0.5
+                    metalness 0.2
+                  }
+                  geometry Plane {
+                    size 0.031 0.011
+                  }
+                }
+              ]
+              width 128
+              height 32
+            }
+          ]
+        }
+        Transform {
+          translation 0.0688 0 0.032
+          rotation 0 1 0 0
+          children [
+            Slot {
+              endPoint Slot {
+                endPoint Transform {
+                  translation 0.00950233 0 -0.00311526
+                  rotation 0 1 0 0.316799
+                  children [
+                    Transform {
+                      rotation 1 0 0 -1.5708
+                      children [
+                        DEF BOARD Group {
+                          children [
+                            Shape {
+                              appearance PBRAppearance {
+                                baseColorMap ImageTexture {
+                                  url [
+                                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/robots/nvidia/jetbot/protos/textures/raspberry_pi_camera.jpg"
+                                  ]
+                                }
+                                roughness 1
+                                metalness 0
+                              }
+                              geometry IndexedFaceSet {
+                                coord Coordinate {
+                                  point [
+                                    -0.0005 -0.01199995592153876 -0.011999999999919044
+                                    -0.0005 0.01200004407846124 -0.011999999999919044
+                                    -0.0005 -0.01200004407846124 0.011999999999919044
+                                    -0.0005 0.01199995592153876 0.011999999999919044
+                                    0.0005 -0.01199995592153876 -0.011999999999919044
+                                    0.0005 0.01200004407846124 -0.011999999999919044
+                                    0.0005 -0.01200004407846124 0.011999999999919044
+                                    0.0005 0.01199995592153876 0.011999999999919044
+                                  ]
+                                }
+                                texCoord TextureCoordinate {
+                                  point [
+                                    0 0
+                                    1 0
+                                    0 1
+                                    1 1
+                                    0.0001 0.0001
+                                    0.9999 0.0001
+                                    0.0001 0.9999
+                                    0.9999 0.9999
+                                  ]
+                                }
+                                coordIndex [
+                                  1, 0, 2, 3, -1, 4, 5, 7, 6, -1, 5, 1, 3, 7, -1, 0, 4, 6, 2, -1, 7, 3, 2, 6, -1, 4, 0, 1, 5, -1
+                                ]
+                                texCoordIndex [
+                                  1, 0, 2, 3, -1, 0, 1, 3, 2, -1, 1, 5, 7, 3, -1, 0, 4, 6, 2, -1, 7, 3, 2, 6, -1, 0, 4, 5, 1, -1
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    Transform {
+                      translation -0.003 0 -0.0015
+                      children [
+                        Shape {
+                          appearance DEF LIGHT_GRAY_APPEARANCE PBRAppearance {
+                            baseColor 0.729412 0.741176 0.713725
+                            roughness 0.5
+                            metalness 0.2
+                          }
+                          geometry Box {
+                            size 0.004 0.022 0.027
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF REAR_WHEEL Solid {
+      translation -0.051 0 0.025
+      children [
+        Shape {
+          appearance USE BLACK_APPEARANCE
+          geometry Cylinder {
+            height 0.032
+            radius 0.0153
+          }
+        }
+        Transform {
+          translation 0 0 -0.0123
+          children [
+            Shape {
+              appearance DEF LIGHT_GRAY_APPEARANCE PBRAppearance {
+                baseColor 0.729412 0.741176 0.713725
+                roughness 0.5
+                metalness 0.2
+              }
+              geometry Sphere {
+                radius 0.0126
+              }
+            }
+          ]
+        }
+      ]
+      name "rear_wheel"
+      contactMaterial "jetbot rear wheel"
+      boundingObject Group {
+        children [
+          DEF REAR_WHEEL Transform {
+            translation 0 0 -0.0123
+            children [
+              Sphere {
+                radius 0.0127
+              }
+            ]
+          }
+          Transform {
+            children [
+              Cylinder {
+                height 0.032
+                radius 0.0153
+              }
+            ]
+          }
+        ]
+      }
+      physics Physics {
+      }
+    }
+    DEF LEFT_WHEEL_JOINT HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.10069821549721
+        axis 0 1 0
+        anchor 0.03 0.05215 0.03
+      }
+      device [
+        RotationalMotor {
+          name "left_wheel_hinge"
+          maxVelocity 50
+          maxTorque 5
+        }
+      ]
+      endPoint DEF LEFT_WHEEL Solid {
+        translation 0.03000048703102461 0.05214999996030617 0.03000217914790331
+        rotation 0.4634338109579456 0.4634321011726354 0.75528788581819 1.8478426404101003
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              roughness 0.5
+              metalness 0.2
+            }
+            geometry Mesh {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/robots/nvidia/jetbot/protos/meshes/wheel.stl"
+              ]
+            }
+          }
+        ]
+        name "left wheel"
+        contactMaterial "jetbot wheel"
+        boundingObject Transform {
+          translation 0.00401 0 0
+          rotation -0.5773502691896258 0.5773502691896258 0.5773502691896258 -2.094395
+          children [
+            Cylinder {
+              height 0.0078
+              radius 0.0299
+            }
+          ]
+        }
+        physics Physics {
+        }
+        translationStep 0.001
+      }
+    }
+    DEF RIGHT_WHEEL_JOINT HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.3313034638534025
+        axis 0 1 0
+        anchor 0.03 -0.0595 0.03
+      }
+      device [
+        RotationalMotor {
+          name "right_wheel_hinge"
+          maxVelocity 50
+          maxTorque 5
+        }
+      ]
+      endPoint DEF RIGHT_WHEEL Solid {
+        translation 0.030000534867689384 -0.05950000005734746 0.030002088065663044
+        rotation 0.5254465708930032 0.5254465677365302 0.6691874218712455 1.9621012273561147
+        children [
+          USE WHEEL_SHAPE
+        ]
+        name "right wheel"
+        contactMaterial "jetbot wheel"
+        boundingObject Transform {
+          translation 0.00401 0 0
+          rotation -0.5773502691896258 0.5773502691896258 0.5773502691896258 -2.094395
+          children [
+            Cylinder {
+              height 0.0078
+              radius 0.0299
+            }
+          ]
+        }
+        physics Physics {
+        }
+        translationStep 0.001
+      }
+    }
+    Transform {
+      translation 0 0 0.0725
+    }
+  ]
+  name "JetBot"
+  boundingObject Group {
+    children [
+      Transform {
+        translation -0.004 0 0.0565
+        children [
+          Box {
+            size 0.13 0.085 0.023
+          }
+        ]
+      }
+      Transform {
+        translation -0.0129 0.0013 0.0843
+        children [
+          Box {
+            size 0.098 0.08 0.029
+          }
+        ]
+      }
+      Transform {
+        translation -0.0007 -0.034 0.0308
+        children [
+          Box {
+            size 0.135 0.016 0.028
+          }
+        ]
+      }
+      Transform {
+        translation -0.0007 0.034 0.0308
+        children [
+          Box {
+            size 0.135 0.016 0.028
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.5641
+    centerOfMass [
+      -0.015 0 0.07
+    ]
+  }
+  controller "<extern>"
+  supervisor TRUE
+}
+RectangleArena {
+  floorSize 10 10
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+TexturedBackgroundLight {
+  texture "factory"
+}
+DEF rubber_duck Solid {
+  translation 0 0 0.023
+  rotation 0 0 -1 1.53072e-05
+  children [
+    DEF BEAK Transform {
+      translation 0.0394 0 0.05868
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.901961 0.431373 0.109804
+            roughness 0.7
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/objects/toys/protos/RubberDuck/meshes/beak.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF BODY Transform {
+      children [
+        DEF GEOM Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.8 0
+            roughness 0.7
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/objects/toys/protos/RubberDuck/meshes/body.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF EYE Transform {
+      translation 0.026677002 0.012248128 0.069200846
+      rotation -0.18117290235136482 0.4918957348778623 0.8515955410067332 -1.18424
+      children [
+        DEF EYE_GEOM Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/objects/toys/protos/RubberDuck/textures/eye.jpg"
+              ]
+            }
+            roughness 0.4
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022a/projects/objects/toys/protos/RubberDuck/meshes/eye.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF EYE Transform {
+      translation 0.026708849 -0.012243724 0.069238147
+      rotation -0.23056699185533644 0.18891399332670777 0.954541966281283 -2.20978
+      children [
+        USE EYE_GEOM
+      ]
+    }
+  ]
+  name "rubber duck"
+  model "rubber duck"
+  immersionProperties [
+    ImmersionProperties {
+      fluidName "water"
+      viscousResistanceForceCoefficient 400
+      viscousResistanceTorqueCoefficient 0.5
+    }
+  ]
+  boundingObject Group {
+    children [
+      Transform {
+        translation 0 0 -0.018
+        children [
+          Box {
+            size 0.06 0.05 0.005
+          }
+        ]
+      }
+      Transform {
+        translation 0.037 0 0.06
+        children [
+          Box {
+            size 0.014 0.025 0.015
+          }
+        ]
+      }
+      Transform {
+        translation 0.01 0 0.059
+        children [
+          Sphere {
+            radius 0.025
+          }
+        ]
+      }
+      Transform {
+        translation -0.042 0 0.013
+        rotation -0.06526396752413574 -0.06526396752413574 0.9957315045161609 1.575074
+        children [
+          Capsule {
+            height 0.04
+            radius 0.008
+            subdivision 16
+          }
+        ]
+      }
+      Transform {
+        translation 0 0 0.005
+        rotation -0.5773509358554485 -0.5773509358554485 -0.5773489358556708 -2.094397
+        children [
+          Capsule {
+            height 0.05
+            radius 0.025
+            subdivision 16
+          }
+        ]
+      }
+      Transform {
+        translation 0.013 0 0.034
+        children [
+          Cylinder {
+            height 0.013
+            radius 0.018
+          }
+        ]
+      }
+      Transform {
+        translation 0 0.02 0
+        rotation -0.5773509358554485 -0.5773509358554485 -0.5773489358556708 -2.094397
+        children [
+          Capsule {
+            height 0.036
+            radius 0.018
+            subdivision 16
+          }
+        ]
+      }
+      Transform {
+        translation 0 -0.02 0
+        rotation -0.5773509358554485 -0.5773509358554485 -0.5773489358556708 -2.094397
+        children [
+          Capsule {
+            height 0.036
+            radius 0.018
+            subdivision 16
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density 400
+    centerOfMass [
+      0 0 0
+    ]
+    damping Damping {
+      linear 0.5
+      angular 0.5
+    }
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
